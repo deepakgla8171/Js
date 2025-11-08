@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box{
+            width: 300px;
+            height: 400px;
+            background-color: aqua;
+            border: none;
+            border-radius: 16px;
+        }
+        .big-box{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(28, 10, 71);
+            border: none;
+            border-radius: 50%;
+            background-image: url("deepak.jpg");
+            background-position: center;
+          background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box boxy-box" id="box"> </div>
+        <button  class="btn">Click Me</button>
+   
+    <script>
+         let box =document.getElementById("box")
+            let btn = document.querySelector(".btn")
+        btn.addEventListener("click", function(){
+            // box.style.height = "400px";
+            // box.style.width = "400px";
+            // box.style.backgroundColor= "teal";
+          
+            box.classList.toggle("big-box");
+            box.classList.toggle("box")
+            
+        });
+  
+    </script>
+</body>
+</html>
