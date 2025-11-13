@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+   <style>
+    body{
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin-top: 200px;
+     
+    }
+    form{
+        width: 400px;
+         border: 2px solid black;
+         height:350px;
+         background-color: white;
+         border-radius: 5px;
+     
+    }
+    h1{
+       margin-left: 30px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+       letter-spacing: 1px;
+       background-color: black;
+       color: white;
+       margin-right: 10px;
+    }
+    label{
+      margin-left: 30px;
+      font-size: larger;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+       letter-spacing: 1px;
+    }
+    input{
+        width: 150px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 2PX;
+    }
+    button{
+       margin-left: 150px;
+       width: 100px;
+       height: 35px;
+       background-color: black;
+       color: white;
+      font-size: larger;
+       border-radius: 5px;
+      
+    }
+    .btn:hover{
+        margin-left: 140px;
+       width: 150px;
+       height: 40px;
+       background-color: white;
+       color: black;
+      font-size: 35px;
+       border-radius: 8px;
+    }
+  
+   </style>
+</head>
+<body>
+    <section>
+        <form action="">
+            <h1>Company Information</h1>
+            <label for="text">compnay Name:</label>
+            <input type="text" id="text" ><br><br>
+            <label for="text">Compnay Title:</label>
+            <input type="text" id="text" ><br><br>
+            <label for="url">Url:</label>
+            <input type="text" id="URL" ><br><br>
+       
+            <button class="btn">Sumit</button>
+
+        </form>
+    </section>
+    <script>
+       let btn = document.querySelector(".btn")
+         btn.addEventListener("click", function(e){
+            e.preventDefault();
+            btn.style.height = "400px";
+            btn.style.width = "400px";
+            btn.style.background = "black";
+            btn.style.border = "1px solid black";
+            btn.style.margin = "40px";
+            btn.style.margintop = "100px";
+            btn.style.backgroundimage = url("deepak.jpg");
+        
+         });
+
+    </script>
+</body>
+</html>
