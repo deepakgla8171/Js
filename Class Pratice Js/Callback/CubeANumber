@@ -1,0 +1,4 @@
+function cube(n, cb) {
+    cb(n ** 3);
+}
+cube(3, r => console.log(r));
