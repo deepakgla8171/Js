@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 – Fetch Users</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f8ff;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #427bff;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #427bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    /* Loading spinner */
+    .loader {
+      border: 6px solid #e3e8f0;
+      border-top: 6px solid #427bff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+      display: none;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>JSONPlaceholder Users</h2>
+
+  <button id="refreshBtn">Refresh Data</button>
+
+  <div class="loader" id="loader"></div>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- Data goes here -->
+    </tbody>
+  </table>
+
+  <script>
+    const API_URL = "https://jsonplaceholder.typicode.com/users";
+
+    const tableBody = document.getElementById("tableBody");
+    const loader = document.getElementById("loader");
+    const refreshBtn = document.getElementById("refreshBtn");
+
+    // Fetch users using async/await
+    async function fetchUsers() {
+      try {
+        loader.style.display = "block";  // show spinner
+        tableBody.innerHTML = "";        // clear table
+
+        const response = await fetch(API_URL);
+        const users = await response.json();
+
+        loader.style.display = "none";   // hide spinner
+
+        // Render user data into table
+        users.forEach(user => {
+          const row = `
+            <tr>
+              <td>${user.name}</td>
+              <td>${user.email}</td>
+              <td>${user.address.city}</td>
+            </tr>
+          `;
+          tableBody.insertAdjacentHTML("beforeend", row);
+        });
+      } 
+      catch (error) {
+        loader.style.display = "none";
+        tableBody.innerHTML = "<tr><td colspan='3'>Error loading data</td></tr>";
+      }
+    }
+
+    // Refresh button
+    refreshBtn.addEventListener("click", fetchUsers);
+
+    // Auto-load on page start
+    fetchUsers();
+  </script>
+
+</body>
+</html>
+
