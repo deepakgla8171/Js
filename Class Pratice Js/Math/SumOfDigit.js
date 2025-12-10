@@ -7,3 +7,4 @@ function sumDigits(n) {
   return sum;
 }
 console.log(sumDigits(9876));
+console.log(sumDigits(9875));
