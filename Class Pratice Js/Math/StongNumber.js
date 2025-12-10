@@ -11,4 +11,4 @@ function isStrong(n) {
   return sum === n;
 }
 
-console.log(isStrong(145));
+console.log(isStrong(144));
