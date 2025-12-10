@@ -1,2 +1,2 @@
-let n = 8;
-console.log(n * n);  // 64
+let n = 9;
+console.log(n * n);  
