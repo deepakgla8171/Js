@@ -6,4 +6,4 @@ function reverseNum(n) {
   }
   return rev;
 }
-console.log(reverseNum(98779));
+console.log(reverseNum(95779));
