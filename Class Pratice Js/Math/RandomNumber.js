@@ -1,4 +1,4 @@
 function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-console.log(randomBetween(10, 40));
+console.log(randomBetween(10, 20));
