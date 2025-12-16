@@ -1,3 +1,3 @@
 for(let i=1; i<=10; i++){
-    console.log(i*7)
+    console.log(i*8)
 }
