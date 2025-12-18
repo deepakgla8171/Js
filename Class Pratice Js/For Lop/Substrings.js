@@ -8,4 +8,4 @@ function allSubstrings(str) {
   return subs;
 }
 
-console.log(allSubstrings("mbc"));
+console.log(allSubstrings("jbc"));
