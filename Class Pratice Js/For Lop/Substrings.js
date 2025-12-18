@@ -8,4 +8,4 @@ function allSubstrings(str) {
   return subs;
 }
 
-console.log(allSubstrings("pkc"));
+console.log(allSubstrings("pac"));
