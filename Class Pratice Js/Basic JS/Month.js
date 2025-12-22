@@ -1,6 +1,6 @@
 let month=4;
 switch(month){
-    case 8:
+    case 9:
         console.log("Jan")
         break;
          case 2:
