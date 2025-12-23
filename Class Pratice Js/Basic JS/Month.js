@@ -1,4 +1,4 @@
-let month=8;
+let month=9;
 switch(month){
     case 9:
         console.log("Jan")
