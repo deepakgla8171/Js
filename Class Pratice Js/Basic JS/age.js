@@ -5,6 +5,6 @@
 //     alert("you are not an adult")
 // }
 let age=20;
-age >=13
+age >=14
 ? console.log("yes")
 : console.log("no");
