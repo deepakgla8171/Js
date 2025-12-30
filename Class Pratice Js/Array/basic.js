@@ -21,10 +21,10 @@
 // a[a.length] = 20;
 // console.log(a)
 
-// const a=[1,2,3,4,5];
-// a.push(20);
-// a.push(45);
-// console.log(a)
+const a=[1,2,3,4,5];
+a.push(30);
+a.push(45);
+console.log(a)
 
 // Array m se first value nikalo Pop
 
