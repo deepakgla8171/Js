@@ -22,7 +22,7 @@
 // console.log(a)
 
 const a=[1,2,3,4,5];
-a.push(30);
+a.push(40);
 a.push(35);
 console.log(a)
 
