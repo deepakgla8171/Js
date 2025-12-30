@@ -23,7 +23,7 @@
 
 const a=[1,2,3,4,5];
 a.push(30);
-a.push(25);
+a.push(35);
 console.log(a)
 
 // Array m se first value nikalo Pop
