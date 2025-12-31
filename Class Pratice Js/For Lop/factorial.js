@@ -1,4 +1,4 @@
-let fact = 6;
+let fact = 9;
 for(let i = 1; i <= 5; i++) {
     fact *= i;
 }
