@@ -1,3 +1,3 @@
-const myname="Deeoak kumur";
+const myname="Dpeoak kumur";
 // myname =23;
 console.log(myname);
