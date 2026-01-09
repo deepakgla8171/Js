@@ -1,3 +1,3 @@
 const name ="Deepak";
-const age =49;
+const age =01;
 console.log(`Hello, my name is ${name} and i am ${age} years old, i was born in ${25-age}`);
