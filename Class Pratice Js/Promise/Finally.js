@@ -1,5 +1,5 @@
 let p = new Promise((resolve, reject) => {
-    reject("Error!");
+    reject("Error");
 });
 
 p.then(res => console.log(res))

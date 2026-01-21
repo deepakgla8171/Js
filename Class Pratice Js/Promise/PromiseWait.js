@@ -1,6 +1,6 @@
 function fetchUser() {
     return new Promise(resolve => {
-        setTimeout(() => resolve("User Loaded"), 1000);
+        setTimeout(() => resolve("User Loaded"), 2000);
     });
 }
 
