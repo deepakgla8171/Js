@@ -8,4 +8,4 @@ const timer = setInterval(() => {
     clearInterval(timer);
     console.log("Time's up!");
   }
-}, 4000);
+}, 5000);
