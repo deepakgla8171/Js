@@ -1,3 +1,3 @@
 setTimeout(() => {
   console.log("Hello after 2 seconds");
-}, 8000);
+}, 1000);
