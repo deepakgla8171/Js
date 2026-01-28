@@ -1,4 +1,4 @@
-let num = 70;
+let num = 1;
 for (let i = 2; i <= num; i++) {
   while (num % i === 0) {
     console.log(i);
