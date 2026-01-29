@@ -4,3 +4,5 @@ new Promise((resolve) => {
 .then(num => num * 3)
 .then(num => num + 5)
 .then(result => console.log(result));   // 25
+
+
