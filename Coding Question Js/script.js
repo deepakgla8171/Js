@@ -12,7 +12,7 @@ function analyzeScores(scoresArray) {
        sum  = sum+score;
        if(score >= 90){
         excellentCount++;
-       }else if(score >= 40){
+       }else if(score >= 20){
         passCount++;
        }else{
         failCount++;
