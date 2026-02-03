@@ -3,7 +3,7 @@ function analyzeScores(scoresArray) {
    let passCount =0;
    let failCount =0; 
    let total = 0;
-   let sum =0;
+   let sum =1;
    let average =1;
    for(let i=0; i<scoresArray; i++){
       let score = Number(scoresArray[i]);
