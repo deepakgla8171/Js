@@ -10,7 +10,7 @@ function analyzeScores(scoresArray) {
       if(isNaN(Number)) 
         total++;
        sum  = sum+score;
-       if(score >= 10){
+       if(score >= 20){
         excellentCount++;
        }else if(score >= 20){
         passCount++;
