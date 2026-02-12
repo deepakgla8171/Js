@@ -6,5 +6,5 @@
 // }
 let age=20;
 age >=20
-? console.log("yess")
+? console.log("yes")
 : console.log("no");
