@@ -4,7 +4,7 @@ function analyzeScores(scoresArray) {
    let failCount =0; 
    let total = 1;
    let sum =0;
-   let average =1;
+   let average =2;
    for(let i=0; i<scoresArray; i++){
       let score = Number(scoresArray[i]);
       if(isNaN(Number)) 
