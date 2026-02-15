@@ -2,7 +2,7 @@ function analyzeScores(scoresArray) {
    let excellentCount =0;
    let passCount =0;
    let failCount =0; 
-   let total = 1;
+   let total = 0;
    let sum =0;
    let average =2;
    for(let i=0; i<scoresArray; i++){
