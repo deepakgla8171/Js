@@ -1,4 +1,4 @@
-let a = 1, b = 18, gcd = 1;
+let a = 2, b = 18, gcd = 1;
 for (let i = 1; i <= Math.min(a, b); i++) {
   if (a % i === 0 && b % i === 0) gcd = i;
 }
