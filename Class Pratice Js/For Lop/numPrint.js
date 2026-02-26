@@ -1,4 +1,4 @@
-let num=4;
+let num=5;
 
 for(let i=1; i<=10; i++){
     console.log(i)
