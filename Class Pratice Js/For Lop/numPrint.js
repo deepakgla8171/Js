@@ -1,4 +1,4 @@
-let num=27;
+let num=28;
 
 for(let i=1; i<=10; i++){
     console.log(i)
