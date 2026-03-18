@@ -10,5 +10,5 @@ function isArmstrong(n) {
 
   return sum === n;
 }
-console.log(isArmstrong(153));
+console.log(isArmstrong(150));
 console.log(isArmstrong(123));
