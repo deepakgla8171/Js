@@ -4,5 +4,5 @@ function isEven(nums){
     else
         return false;
 }
-const res=isEven(8);
+const res=isEven(9);
 console.log(res)
